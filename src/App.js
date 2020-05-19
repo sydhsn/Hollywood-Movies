@@ -8,9 +8,9 @@ class App extends Component {
     super();
     this.state = {  movies:[], searchField:''};
   }
-
+  const url ="https://backend-ygzsyibiue.now.sh/api/v1/movies/";
   componentDidMount() {
-    fetch("https://backend-ygzsyibiue.now.sh/api/v1/movies/")
+    fetch(url)
     .then(response => response.json())
     .then(users => {
       this.setState({movies:users});
