@@ -35,7 +35,7 @@ class App extends Component {
               />
               <MoviesList movies={filteredmovies}/>
           </div>
-          );
+         );
   }
 }
 
