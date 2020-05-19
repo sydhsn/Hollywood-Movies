@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://api.myjson.com/bins/a33mp")
+    fetch("https://backend-ygzsyibiue.now.sh/api/v1/movies/")
     .then(response => response.json())
     .then(users => {
       this.setState({movies:users});
